@@ -4,22 +4,26 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>我的博客</title>
+    <title>css3全面理解transtion | 我的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="xiaobai">
     
 
     
-    <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="我的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+    <meta name="description" content="早期在Web中要实现动画效果，都是依赖于JavaScript或Flash来完成。但在CSS3中新增加了一个新的模块transition，它可以通过一些简单的CSS事件来触发元素的外观变化，让效果显得更加细腻 CSS3的过度transition属性是一个复合属性，主要包括以下几个子属性：    transition-property:指定过渡或动态模拟的CSS属性
+[transition-dura">
+<meta property="og:type" content="article">
+<meta property="og:title" content="css3全面理解transtion">
+<meta property="og:url" content="http://yoursite.com/2015/05/16/css3transtion/index.html">
 <meta property="og:site_name" content="我的博客">
-<meta property="og:description">
+<meta property="og:description" content="早期在Web中要实现动画效果，都是依赖于JavaScript或Flash来完成。但在CSS3中新增加了一个新的模块transition，它可以通过一些简单的CSS事件来触发元素的外观变化，让效果显得更加细腻 CSS3的过度transition属性是一个复合属性，主要包括以下几个子属性：    transition-property:指定过渡或动态模拟的CSS属性
+[transition-dura">
+<meta property="og:updated_time" content="2016-05-15T17:07:58.204Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的博客">
-<meta name="twitter:description">
+<meta name="twitter:title" content="css3全面理解transtion">
+<meta name="twitter:description" content="早期在Web中要实现动画效果，都是依赖于JavaScript或Flash来完成。但在CSS3中新增加了一个新的模块transition，它可以通过一些简单的CSS事件来触发元素的外观变化，让效果显得更加细腻 CSS3的过度transition属性是一个复合属性，主要包括以下几个子属性：    transition-property:指定过渡或动态模拟的CSS属性
+[transition-dura">
 
     
     <link rel="alternative" href="/atom.xml" title="我的博客" type="application/atom+xml">
@@ -67,62 +71,10 @@
 </div>
     </header>
     <div id="container">
-      <div id="main">
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/05/17/css3/" title="css3全面理解（2）" itemprop="url">css3全面理解（2）</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="xiaobai" target="_blank" itemprop="author">xiaobai</a>
-		
-  <p class="article-time">
-    <time datetime="2015-05-17T12:08:25.000Z" itemprop="datePublished"> 發表於 2015-05-17</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>  Keyframes介绍<br>  Keyframes被称为关键帧，其类似于做动画的帧。在CSS3中其主要以“@keyframes”开头，后面紧跟着是动画名称加上一对大括号“{…}”，括号中就是一些不同时间段样式规则<br>例子：@keyframes changecolor{<br>  0%{<br>   background: red;<br>  }<br>  100%{<br>    background: green;<br>  }<br>}<br>在一个“@keyframes”中的样式规则可以由多个百分比构成的，如在“0%”到“100%”之间创建更多个百分比，分别给每个百分比中给需要有动画效果的元素加上不同的样式，从而达到一种在不断变化的效果。<br>经验与技巧：在@keyframes中定义动画名称时，其中0%和100%还可以使用关键词from和to来代表，其中0%对应的是from，100%对应的是to。<br>Animation属性<br> Animation主要用来定义过渡动画效果<br>    animation-name:changecolor; //定义动画的名字，必须与@keyframes changecolor一摸一样，否则动画无效，数值可以是none，无动画<br>    animation-duration: 10s; //必须写，动画过渡的时间，这里面时间可以长些<br>    animation-timing-function: ease; //动画的过渡速度<br>    animation-delay: 1s; //动画启动时间 没有数值，默认为0，加载后执行动画<br>    animation-iteration-count:infinite; //动画循环次数，可写具体数值与无限循环（infinite）<br>可以缩写为：animation: changecolor 5s ease-out 0.2s infinite alternate;</p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
   <h1 itemprop="name">
     
       <a href="/2015/05/16/css3transtion/" title="css3全面理解transtion" itemprop="url">css3全面理解transtion</a>
@@ -136,22 +88,24 @@
     
   </p>
 </header>
-    <div class="article-content">
-        
-        <p> 早期在Web中要实现动画效果，都是依赖于JavaScript或Flash来完成。但在CSS3中新增加了一个新的模块transition，它可以通过一些简单的CSS事件来触发元素的外观变化，让效果显得更加细腻<br> CSS3的过度transition属性是一个复合属性，主要包括以下几个子属性：<br>    <a href="/">transition-property</a>:指定过渡或动态模拟的CSS属性</p>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			
+		
+		</div>
+		
+		<p> 早期在Web中要实现动画效果，都是依赖于JavaScript或Flash来完成。但在CSS3中新增加了一个新的模块transition，它可以通过一些简单的CSS事件来触发元素的外观变化，让效果显得更加细腻<br> CSS3的过度transition属性是一个复合属性，主要包括以下几个子属性：<br>    <a href="/">transition-property</a>:指定过渡或动态模拟的CSS属性</p>
 <pre><code>[transition-duration]:指定完成过渡所需的时间
 transition-timing-function]:指定过渡函数
 transition-delay]:指定开始出现的延迟时间
 </code></pre><p>过渡动画transition可以组合简写<br>div.box{ transition:all 0.5s ease-in 0.18s; } </p>
 <p>它的语法顺序是{ transition:property duration timing-function delay; }<br><!-- More info: [Writing](https://hexo.io/docs/writing.html) --></p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
+  
+	</div>
+		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
 
@@ -159,24 +113,43 @@ transition-delay]:指定开始出现的延迟时间
 
 
 
-
-<div class="comments-count">
+	<div class="article-share" id="share">
 	
-</div>
+	  <div data-url="http://yoursite.com/2015/05/16/css3transtion/" data-title="css3全面理解transtion | 我的博客" data-tsina="null" class="share clearfix">
+	  </div>
+	
+	</div>
+
 
 </footer>
 
-
-    </article>
-
-
-
-
-
-
-
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/05/17/css3/" title="css3全面理解（2）">
+  <strong>上一篇：</strong><br/>
+  <span>
+  css3全面理解（2）</span>
+</a>
 </div>
+
+
+</nav>
+
+	
+
+</div>  
       <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ 
+ 
+  </div>
 
 <div id="asidepart">
 <div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
@@ -307,12 +280,89 @@ $(document).ready(function(){
       m.removeClass('moveMain');
       a.css('display', 'block').removeClass('fadeOut');
       o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
         
     }
   });
 });
 </script>
 
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
 
 
 
@@ -383,4 +433,4 @@ var _hmt = _hmt || [];
 <!-- Tiny_search End -->
 
   </body>
- </html>
+</html>
